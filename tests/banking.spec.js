@@ -23,7 +23,7 @@ test('Bank Manager and customer', async ({ page }) => {
   page.once('dialog', dialog => dialog.accept());
 
   // Open account
-  //await manager.openAccount(customerFullName, 'Dollar');
+  await manager.openAccount(customerFullName, 'Dollar');
   page.once('dialog', dialog => dialog.accept());
 
   await manager.goHome();
